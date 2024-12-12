@@ -4,20 +4,19 @@
     box-sizing: border-box;
 }
 
-
 body {
-    font-family: 'Playfair Display', serif; 
+    font-family: 'Playfair Display', serif;
     background-color: #f4f1e1;
-    color: #3b2a45; 
+    color: #3b2a45;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    height: 100vh; 
+    justify-content: center;
+    height: 100vh; /* This is fine */
     align-items: center;
     text-align: center;
     padding: 0 10px;
+    min-height: 100vh; /* Ensure it takes the full height of the viewport */
 }
-
 
 .container {
     width: 100%;
@@ -26,7 +25,7 @@ body {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-top: 40px; 
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 
@@ -56,7 +55,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #f4f1e1; 
+    color: #f4f1e1;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
@@ -64,7 +63,6 @@ nav ul li a {
     padding: 10px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
-
 
 nav ul li a:hover {
     color: #d4b083;
@@ -88,7 +86,7 @@ footer {
     font-size: 14px;
     color: #888;
     padding: 10px;
-    margin-top: auto; 
+    margin-top: auto;
 }
 
 a {
